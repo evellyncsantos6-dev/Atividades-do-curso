@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 90px; /* Ajuda a alinhar os campos de input */
+    margin-right: 5px;
+}
+
+input[type="text"], 
+input[type="number"] {
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#promocaoLinha1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#promocaoLinha2 {
+    color: #334388; /* Cor para destacar o preço, se desejar */
+    font-weight: bold;
+}
