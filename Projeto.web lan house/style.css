@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #cc1f1f;
+    padding-bottom: 10px;
+}
+
+form p {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid #860909;
+    border-radius: 4px;
+    width: 150px;
+    text-align: right;
+}
+
+button {
+    background-color: #960707;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7e0000;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #06090e;
+}
+
+#valorPagar {
+    font-weight: bold;
+    color: #b10e09; /* Cor para destacar o resultado */
+}
