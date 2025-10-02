@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado em Promoção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supermercado em Promoção </h1>
+    
+        <label for="produto">Descrição do Produto:</label>
+        <input type="text" id="produto" placeholder="Ex: Creme Dental" required>
+    
+        <label for="preco">Preço Unitário (R$):</label>
+        <input type="number" id="preco" step="0.01" min="0.01" placeholder="Ex: 9.90" required>
+    
+        <button onclick="calcularPromocao()">Mostrar Promoção</button>
+    
+        <div id="saidaPromocao">
+            <p>Preencha os campos e clique em "Mostrar Promoção" para ver os detalhes da oferta.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
