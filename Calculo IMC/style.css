@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b4275;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(16, 79, 173, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    color: #072c7c;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #1a60ca;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #05368f;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.resultado p {
+    margin: 5px 0;
+    text-align: left;
+    color: #333;
+}
+
+/* Estilos para destacar os resultados */
+.resultado span {
+    font-weight: bold;
+    color: #044e9c;
+}
+
+.resultado .imc-value {
+    font-size: 1.2em;
+    color: #2835a7; /* Cor verde para destaque do valor */
+}
+
+.resultado .condicao-status {
+    font-size: 1.1em;
+    color: #355cdc; /* Cor vermelha para destaque da condição */
+}
