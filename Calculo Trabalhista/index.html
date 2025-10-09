@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo Trabalhista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo Trabalhista</h1>
+        <p><strong>Mês:</strong> Janeiro de 2025</p>
+
+        <form id="salarioForm">
+            <label>Nome: <input type="text" id="nome" required></label><br>
+            <label>Valor Hora (R$): <input type="number" id="valorHora" required></label><br>
+            <label>Horas Trabalhadas: <input type="number" id="horas" required></label><br>
+            <label>Horas Extras: <input type="number" id="horasExtras"></label><br>
+            <label>Dependentes: <input type="number" id="dependentes"></label><br>
+            <label>Outras Deduções (R$): <input type="number" id="outrasDeducoes"></label><br>
+
+            <button type="submit">Calcular</button>
+            <button type="button" onclick="limpar()">Limpar</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h2>Resultado</h2>
+            <p><strong>Nome:</strong> <span id="resNome"></span></p>
+            <p><strong>Salário Base:</strong> R$ <span id="salarioBase">0.00</span></p>
+            <p><strong>Horas Extras:</strong> + R$ <span id="valorExtras">0.00</span></p>
+            <p><strong>Desconto INSS:</strong> - R$ <span id="descontoINSS">0.00</span></p>
+            <p><strong>Desconto IRPF:</strong> - R$ <span id="descontoIRPF">0.00</span></p>
+            <p><strong>Vale Transporte (6%):</strong> - R$ <span id="valeTransporte">0.00</span></p>
+            <p><strong>Outras Deduções:</strong> - R$ <span id="outras">0.00</span></p>
+            <h3>Salário Líquido: R$ <span id="salarioLiquido">0.00</span></h3>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
