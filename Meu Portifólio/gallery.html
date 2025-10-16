@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portifólio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><button id="toggle-theme">Tema Claro</button></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="profile-img-container">
+          <img src="img/IMG-20250927-WA0010.jpg" alt="Foto evy" />
+        </div>
+        <h1>Minha Galeria de Projetos</h1>
+      </header>
+
+      <main>
+        <section class="gallery-section">
+          <h2>Projetos em Destaque</h2>
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url('img/Captura\ de\ tela\ 2025-10-16\ 142920.png');
+                "
+              >
+                <div class="slide-caption">HTML</div>
+              </div>
+
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url('img/Captura\ de\ tela\ 2025-10-16\ 144443.png');
+                "
+              >
+                <div class="slide-caption">HTML+CSS+JS</div>
+              </div>
+
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url('img/Captura\ de\ tela\ 2025-10-16\ 143400.png');
+                "
+              >
+                <div class="slide-caption">HTML+CSS</div>
+              </div>
+
+              <div
+                class="swiper-slide"
+                style="background-image: url('img/Captura\ de\ tela\ 2025-10-16\ 143431.png')"
+              >
+                <div class="slide-caption">HTML+CSS+JS</div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+      </main>
+      
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
