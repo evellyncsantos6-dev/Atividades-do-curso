@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal-background">
+        <div class="modal-content">
+            <h2 class="title">Consulta Logradouro pelo CEP</h2>
+            
+            <div class="input-group group-cep">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+                <button id="buscar-cep">Buscar</button>
+            </div>
+
+            <div class="input-group">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" id="logradouro" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero">
+            </div>
+
+            <div class="input-group">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento">
+            </div>
+
+            <div class="input-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="uf">UF</label>
+                <input type="text" id="uf" maxlength="2" readonly>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

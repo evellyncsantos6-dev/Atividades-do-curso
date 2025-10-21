@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; 
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.75); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background-color: #1f87e9; 
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #1e8ee9;
+    box-sizing: border-box;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+.input-group {
+    background-color: #095c94; 
+    border: 1px solid #095c94;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-group label {
+    display: none; 
+}
+
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+    border: 1px solid white;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1em;
+}
+
+.group-cep{
+    display: block; 
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.group-cep #cep {
+    width: 90%;
+    margin: 5px 0 0 0;
+    padding: 7px;
+    display: inline-block;
+}
+
+.input-group #cep {
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 7px;
+}
+
+#buscar-cep {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    margin: 5px auto;
+    width: 95%;
+    display: block;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+#buscar-cep:hover {
+    background-color: #333;
+}
+
+
+input[readonly] {
+    background-color: #eee;
+    color: #555;
+    cursor: default;
+}
