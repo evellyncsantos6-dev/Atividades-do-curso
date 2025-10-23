@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <h1>Previsão Tempo</h1>
+            <div class="input-group">
+                <label for="city-input">Cidade</label>
+                <input type="text" id="city-input" placeholder="Aracaju" value="Aracaju">
+                <button id="search-button">Buscar</button>
+            </div>
+        </div>
+
+        <div class="weather-result" id="weather-result-box">
+            <h2 id="city-name-display">Tempo Aracaju</h2>
+            <p id="temperature">...</p>
+            <div class="weather-icon-container">
+                <img id="weather-icon" src="" alt="Ícone do Clima">
+            </div>
+            <p id="description">...</p>
+            <p id="humidity">Umidade: ...</p>
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
