@@ -1,122 +1,71 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    color: #333;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 350px; /* Largura base similar ao modelo */
-}
-
-/* Estilo para o Bloco de Busca (Similar ao cinza superior) */
-.search-box {
-    background-color: #555; /* Cinza escuro */
-    color: white;
-    padding: 20px;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #f5f5f5;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+  
+  h1 {
+    background-color: #d3d3d3;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.search-box h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-#city-input {
-    width: 80%;
+    padding: 5px;
+    font-size: 1.3em;
+  }
+  
+  .form {
+    background-color: #a9a9a9;
+    margin-top: 10px;
+    border-radius: 10px;
     padding: 10px;
-    margin-bottom: 15px;
-    border: none;
+  }
+  
+  input {
+    width: 90%;
+    padding: 5px;
     border-radius: 5px;
+    border: none;
     text-align: center;
-    font-size: 1em;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-#search-button {
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 15px;
     background-color: black;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s;
-}
-
-#search-button:hover {
-    background-color: #333;
-}
-
-/* Estilo para o Bloco de Resultado (Similar ao cinza inferior) */
-.weather-result {
-    background-color: #555; /* Cinza escuro */
-    color: white;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    min-height: 250px; /* Garante um tamanho mínimo */
-}
-
-.weather-result h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-#temperature {
-    font-size: 3em; /* Tamanho maior para a temperatura */
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.weather-icon-container {
-    margin: 10px 0;
-}
-
-#weather-icon {
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Sombra para destacar o ícone */
-}
-
-#description {
-    font-size: 1.5em; /* Tamanho maior para a descrição (Nublado) */
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-#humidity {
-    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  .resultado {
+    background-color: #a9a9a9;
     margin-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 10px;
-}
-
-.error-message {
-    color: red;
-    background-color: #fee;
+    border-radius: 10px;
     padding: 10px;
-    border: 1px solid red;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 10px;
-    display: none; /* Escondido por padrão */
-}
+  }
+  
+  .temp {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .icone {
+    font-size: 2em;
+    margin: 5px 0;
+  }
