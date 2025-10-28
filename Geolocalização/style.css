@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #119beb, #fff);
+}
+
+h1 {
+  color: #335ed6;
+  margin-top: 20px;
+}
+
+#map {
+  height: 80vh;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+  
