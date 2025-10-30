@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.mensagem-erro {
+    color: #dc3545;
+    font-weight: bold;
+    min-height: 20px; /* Para manter o layout estável */
+    margin-bottom: 15px;
+}
+
+.resultado-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    flex: 1 1 250px; /* Flexível para ocupar o espaço */
+}
+
+.card h2 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.temperatura {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff8c00;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.clima-descricao {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}

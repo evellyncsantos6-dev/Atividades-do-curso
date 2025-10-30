@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP e Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Consulta CEP e Clima</h1>
+
+        <div class="input-group">
+            <label for="cep">Digite o CEP (apenas números):</label>
+            <input type="text" id="cep" maxlength="8" placeholder="Ex: 01001000">
+            <button id="consultar-btn">Consultar</button>
+        </div>
+
+        <p class="mensagem-erro" id="erro"></p>
+
+        <section class="resultado-container">
+            <div id="resultado-endereco" class="card hidden">
+                <h2>Endereço Encontrado</h2>
+                <p><strong>CEP:</strong> <span id="cep-info"></span></p>
+                <p><strong>Logradouro:</strong> <span id="logradouro-info"></span></p>
+                <p><strong>Bairro:</strong> <span id="bairro-info"></span></p>
+                <p><strong>Cidade/UF:</strong> <span id="localidade-info"></span></p>
+                <h2>Previsão do Tempo</h2>
+                <p class="clima-local">Clima em <span id="cidade-clima"></span></p>
+                <p class="temperatura">
+                    <span id="temp-atual"></span> °C
+                </p>
+                <p class="clima-descricao">
+                    <span id="descricao-clima"></span>
+                </p>
+                <p><strong>Mínima:</strong> <span id="temp-min"></span> °C</p>
+                <p><strong>Máxima:</strong> <span id="temp-max"></span> °C</p>
+                <p><strong>Umidade:</strong> <span id="umidade"></span>%</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
