@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Gerenciamento do Painel de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Médica - Sistema de Atendimento</h1>
+        <div id="relogio"></div>
+      </header>
+    
+      <main>
+        <section id="gerar-senha">
+          <h2>Gerar Senha</h2>
+          <button onclick="gerarSenha('preferencial')">Preferencial</button>
+          <button onclick="gerarSenha('normal')">Normal</button>
+          <button onclick="abrirAgendamento()">Agendar Atendimento Virtual</button>
+        </section>
+    
+        <section id="fila">
+          <h2>Fila de Atendimento</h2>
+          <ul id="lista-fila"></ul>
+        </section>
+    
+        <section id="chamadas">
+          <h2>Últimas Senhas Chamadas</h2>
+          <ul id="ultimas-senhas"></ul>
+        </section>
+    
+        <section id="relatorio">
+          <h2>Relatório - TMA (Tempo Médio de Atendimento)</h2>
+          <p id="tma">Tempo médio: 0 segundos</p>
+          <button onclick="chamarProximo()">Chamar Próximo</button>
+        </section>
+      </main>
+    
+      <div id="modal-agendamento" class="modal">
+        <div class="modal-content">
+          <h3>Agendar Atendimento Virtual</h3>
+          <input type="text" id="nome" placeholder="Nome do paciente">
+          <input type="datetime-local" id="data-hora">
+          <button onclick="salvarAgendamento()">Salvar</button>
+          <button onclick="fecharAgendamento()">Fechar</button>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
